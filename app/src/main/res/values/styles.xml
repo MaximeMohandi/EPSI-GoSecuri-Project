@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="ThemeGOSecuri" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorSecondary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+</resources>
