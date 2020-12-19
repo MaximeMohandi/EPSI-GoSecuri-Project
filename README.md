@@ -1,4 +1,3 @@
-# Mise en Situation Professionnel - Compétence JAVA
 # School Project - JAVA skills
 
 ## Introduction
