@@ -1,52 +1,38 @@
-# MSPR Java
+# Mise en Situation Professionnel - Compétence JAVA
+# School Project - JAVA skills
 
-### Présentation
+## Introduction
+This project has been developped for a final at EPSI Paris to demonstrate our JAVA's skills learnt during our 3rd years of bachelor. For this project we played the role of a tech firm hired to conceive and develop a solution for the firm "Go Securi".
 
-Go Securi est une entreprise qui intervient dans le cadre de la sécuurité, du gardiennage, de la protection et de la surveillance. Leur mission consiste à assurer la sécurité des activités, déplacements et manifestations de leur client.
-La société compte 64 salariés dont 53 agents de sécurité.
+## Subject
 
-Les agents partagent un local sécurisé où est stocké du matériel parfois sensible. Aujourd'hui, il n'existe pas de contrôle d'accès au local automatisé, les agents remplissent une fiche d'affection de leur matériel tous les jours avant leur service. Cette pratique est obsolète, et avec le nombre grandissant de collaborateurs, de plus en plus compliquée  à gérer.
+Go Securi is a security firm which operates in security, guarding, protection and surveillance. Their mission is to assure the security during their clients activities (business trip, manifestation, events).
+The firm count 64 employees with 53 security agents
 
-### Besoin
+All the agents share a secured room where is stocked materials. Today, there's no automated access control to this local; The agents fill an affectaion papers for each materials they use everyday before their service. This workflow is obsolet and with the rising of new employee it became difficult to manage.
 
-Le but est de concevoir une solution permettant de vérifier l'accès au local sécurisé autorisant l'accès au personne dont la photo est présente en base de données.
+## Project Goals
 
-La réalistation de ce projet nécéssite de concevoir est développer une solution intelligente permettant l'extraction et la comparaison des photos prises par la webcam et celles présentes sur un serveur. 
+Our goal was to came up with an automated access solution which will grant access to the local by verifying if the user's face exists in the firm database.
 
-La photo prise et le résultat de l'accès positif ou négatif s'affichera sur une interface utilisateur. En cas d'accès positif, un écran s'affichera permettant à l'utilisateur de cocher le matériel qu'il utilisera durant sa journé d'intervention.
+For the realisation of this project, we had to conceive and develop a smart solution which extract and compare a photo taken with a webcam and the photos save in the database.
 
-Le choix de la solution se portera sur le développement d'un application développée en Java.
+The taken picture and the access check result has to be displayed to the users. In case of granted access the users could select materials that he'll use during his shift through the solution.
+
+The solution had to be developed in JAVA.
 
 
-#### Les objectifs
+## Project Requirements
 
-* La prise de photo d'un agent de sécurité via une webcam
-* La comparaison de cette photo avec un ensemble de photo d'identité déjà présentent sur un serveur distant
-* Configuration d'une base de données Google Firebase intégrant notamment la liste des agents ainsi que le matériel
-* Développer une application Java qui réalisera l'acquisition d'image, la comparaison de deux images, ainsi que l'affichage d'une interface utilisateur qui servira à la validation de l'accès au local ainsi qu'à l'affichage d'un formulaire de saisie du matériel
-* Communication entre la base de données Firebase et l'application Java
+* Photo shooting through webcam
+* Photo comparison between taken picture and database pictures
+* Usage of Google Firebase database with the list of agents and materials
+* Development of JAVA application which will take picture, compare it with database and a UI used to grant access and display material acquisition form
+* Communication between Google Firebase and the JAVA application
 
-#### Les cibles
+## Solution Type requirement
+A Custom-made system of access verification to the local and material association to verified users.
 
-L'application sera utilisée par l'ensemble des agents de sécurité de la société
 
-#### Le Type de Solution
-
-Un système sur-mesure de vérification de l'accès à un local, ainsi qu'à l'enregistrement de l'affection du matériel présent aux agents identifiés.
-
-#### Les Besoins Fonctionnels
-
-* Acquisition d'information : photo par webcam
-* Vérification : controle d'identité via personne enregistré dans le système
-* Réponse : rapport envoyé a l'application
-* Enregistrement d'information : après identification, possiblité d'enregistrer le matériel qui sera utilisé
-
-#### Les Besoins Non Fonctionnels
-
-* Disponibilité permannente
-* Performance
-* Intégrité 
-* Ergonomie
-
-### Cahier des Charges
-[Cahier des Charges](https://gitlab.com/MaximeMohandi/mspr-java/blob/master/2018-EPSI-TPRE511-1.0.pdf)
+## Our Solution
+For this project we (my team and me) made a android application calling AWS face rekognition API to compare photo with databases
