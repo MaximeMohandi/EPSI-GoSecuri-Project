@@ -5,3 +5,4 @@
 .externalNativeBuild
 .gradle
 /.idea/
+.idea
